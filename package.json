@@ -1,0 +1,53 @@
+{
+  "name": "@minerouter/mrcv",
+  "version": "2.0.0",
+  "description": "MRCV — Device-Bound Cryptocontainer. XChaCha20-Poly1305 + Argon2id encrypted KV storage with hardware binding.",
+  "keywords": [
+    "cryptography",
+    "vault",
+    "encrypted-storage",
+    "device-binding",
+    "xchacha20",
+    "argon2id",
+    "security"
+  ],
+  "homepage": "https://github.com/WooonderkinG33/MineRouter-MRCV",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WooonderkinG33/MineRouter-MRCV.git"
+  },
+  "license": "MIT",
+  "author": "WooonderkinG33",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "node test/vault.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "libsodium-wrappers-sumo": "^0.7.15"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/libsodium-wrappers": "^0.7.14",
+    "@types/node": "^26.1.1",
+    "conventional-changelog-conventionalcommits": "^10.2.1",
+    "semantic-release": "^25.0.5",
+    "typescript": "^5.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
