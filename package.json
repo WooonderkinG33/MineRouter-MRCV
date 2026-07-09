@@ -1,6 +1,6 @@
 {
   "name": "@minerouter/mrcv",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "MRCV — Device-Bound Cryptocontainer. XChaCha20-Poly1305 + Argon2id encrypted KV storage with hardware binding.",
   "keywords": [
     "cryptography",
